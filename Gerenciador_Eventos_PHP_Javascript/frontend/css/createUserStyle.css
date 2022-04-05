@@ -1,0 +1,42 @@
+/*Form*/
+
+section.userForm {
+    width:90%;
+
+    padding: 20px 0;
+    margin: 0 auto;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+}
+
+section.userForm .container{
+    width: 100%;
+    max-width: 1240px;
+    background: white;
+    padding: 40px;
+    box-shadow: 0px 2px 2px 2px rgba(0, 0, 0, 0.15), 
+        0px 10px 20px -10px rgba(0, 0, 0, 0.1)
+}
+
+.userInfo-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+    grid-gap: 10px;
+    margin-bottom: 10px;
+}
+
+.userAddress-group {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(400px, 1fr));
+    grid-gap: 10px;
+    margin-bottom: 10px;
+}
+
+@media (max-width: 630px) {
+
+    .userInfo-group, .userAddress-group {
+        grid-template-columns: minmax(150px, 1fr);
+    }  
+}
+
